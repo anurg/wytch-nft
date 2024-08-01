@@ -34,11 +34,15 @@ Solana Faucet: https://solfaucet.com/ (After you create the wallet using CLI, ta
 
 Pls follow the video with the instructions, I will send you a testing dapp soon for test minting
 
+Create a folder for project e.g. sugar
+inside sugar folder create assets folder
+put all nft & json files inside assets folder
+
 ```
 solana-keygen new --outfile owner.json
 solana config set --keypair owner.json
 solana config set --url https://api.devnet.solana.com
-solana connfig get
+solana config get
 
 sugar launch
 
@@ -47,3 +51,7 @@ sugar upload
 sugar deploy
 sugar verify
 ```
+
+Generate the merkle-root from here: https://tools.key-strokes.com/merkle-root
+
+This is the config file according to your new request. You can replace the existing config file with this and edit inside and put your things there and after that run the command "sugar guard add" after that check whether the respective guards have been added correctly by this command "sugar guard show"
