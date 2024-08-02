@@ -26,9 +26,9 @@ const allowList = [
 //You can create various allow lists as you like
 
 const allowList2 = [
-    "7SFwqFDjoQuNujWAYCbYiBguZ2oc5iTK7Fdi1DTSfeHs",
-    "Cd87CYx3ZyxXP54mZana8CRi7YU6rwQF3CwonJcVU2oA",
-    "Hvr9fMa2VGSSHwpPqjeLJUqjnea4yWkEhiRLFBptJ6jN"
+    "FbbiXQcEzwSw8MSiNCmUHQ3DsZ93zFYhSuXua1RQ4WKg",
+    "GtHEtBLxmNjF4xW4dosXYXpJfKCR41VWUbX3DfGogfCV",
+    "8PpVMS6bB7VHz4pPVokaqeXTL66xQsLwG2AEhuPUpXPv"
 ];
 
 const quicknodeEndpoint = process.env.NEXT_PUBLIC_RPC/* || clusterApiUrl('devnet')*/;
