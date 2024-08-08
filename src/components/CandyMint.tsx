@@ -37,13 +37,13 @@ import { url } from "inspector";
 import { Footer2 } from "./Footer2";
 import { Console } from "console";
 
-const allowList = ["AJ4n3QhbP7hXBZYChfUHvPU1Lvg3rEVRFdaLn27sqQ28"];
+const allowList = ["EFhcnKuM3PYnqZ3jYAoKqGjmceagbb5CttrrmKL5TrR6"];
 
 //You can create various allow lists as you like
 
-const allowList2 = ["Yfct9FDL4VtoS3QyBStsuG9BpGwkpUnpwT8pHEizZih"];
+const allowList2 = ["AJ4n3QhbP7hXBZYChfUHvPU1Lvg3rEVRFdaLn27sqQ28"];
 
-const allowList3 = ["5Me6gyoojSiBFf5r8DNNogyYpkvs3mq8ieXycAVyQRkE"];
+const allowList3 = ["Yfct9FDL4VtoS3QyBStsuG9BpGwkpUnpwT8pHEizZih"];
 
 const quicknodeEndpoint =
   process.env.NEXT_PUBLIC_RPC; /* || clusterApiUrl('devnet')*/
