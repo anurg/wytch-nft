@@ -41,7 +41,10 @@ const allowList = ["EFhcnKuM3PYnqZ3jYAoKqGjmceagbb5CttrrmKL5TrR6"];
 
 //You can create various allow lists as you like
 
-const allowList2 = ["AJ4n3QhbP7hXBZYChfUHvPU1Lvg3rEVRFdaLn27sqQ28"];
+const allowList2 = [
+  "AJ4n3QhbP7hXBZYChfUHvPU1Lvg3rEVRFdaLn27sqQ28",
+  "8PpVMS6bB7VHz4pPVokaqeXTL66xQsLwG2AEhuPUpXPv",
+];
 
 const allowList3 = ["Yfct9FDL4VtoS3QyBStsuG9BpGwkpUnpwT8pHEizZih"];
 
