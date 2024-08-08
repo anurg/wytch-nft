@@ -9,6 +9,7 @@ import { useWallet, useConnection } from '@solana/wallet-adapter-react';
 import { RequestAirdrop } from '../../components/RequestAirdrop';
 import pkg from '../../../package.json';
 import { CandyMint } from '../../components/CandyMint';
+import { MyNFT } from 'components/MyNFT';
 
 // Store
 import useUserSOLBalanceStore from '../../stores/useUserSOLBalanceStore';
@@ -34,7 +35,7 @@ export const HomeView: FC = ({ }) => {
       <div className="w-full flex flex-col items-center">
         <div className='mt-6 w-full flex justify-center'>
           <h1 id="mainT" className="text-center text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-emerald-900 mb-4">
-            Witchezz Frenzy
+            Witchezz Frenzy 2222
           </h1>
         </div>
 
@@ -49,7 +50,7 @@ export const HomeView: FC = ({ }) => {
       </div>
 
       <div id="amountSol">
-        <CandyMint />
+        <MyNFT />
       </div>
 
 

@@ -37,6 +37,7 @@ export const AppBar: React.FC = () => {
           <img className='logo' src="https://witch-8vg.pages.dev/imgs/witch.jpg"/>
            </div>
           <WalletMultiButtonDynamic className="btn-ghost btn-sm relative flex md:hidden text-lg " />
+
         </div>
 
         {/* Nav Links */}
@@ -46,8 +47,10 @@ export const AppBar: React.FC = () => {
           <img className='me' onClick={meL} src="https://optimusassets.pages.dev/imgs/magiceden.png"/>
            <img className='me' src="https://social-c3e.pages.dev/imgs/twitter (1).png" onClick={tweet}/>
           <img className='me' src="https://social-op.pages.dev/imgs/telegram.png" onClick={tg}/>
+          <div className='mynft'>MY NFTs</div>
 
           <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6 " />
+
           
         </div>
   

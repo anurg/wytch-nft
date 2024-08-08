@@ -752,7 +752,7 @@ export const CandyMint: FC = () => {
             const candyMachine = await fetchCandyMachine(umi, candyMachineAddress);
             let itemDataArray: ItemData[] = [];
 
-            let hitFilter = false; // We are working on the filtering part 
+            let hitFilter = true;
 
             let y = 25;
 
@@ -775,67 +775,94 @@ export const CandyMint: FC = () => {
 
                     console.log("value_to Check : " + data.attributes[0].value);
 
+                    const hasValue2 = (_value0_2 && _value0_2.trim() !== '') || (_value1_2 && _value1_2.trim() !== '') ||
+                        (_value2_2 && _value2_2.trim() !== '') || (_value3_2 && _value3_2.trim() !== '') ||
+                        (_value4_2 && _value4_2.trim() !== '') || (_value5_2 && _value5_2.trim() !== '') ||
+                        (_value6_2 && _value6_2.trim() !== '') || (_value7_2 && _value7_2.trim() !== '') ||
+                        (_value8_2 && _value8_2.trim() !== '');
 
-                    if (((data.attributes[0].value == _value0_1 ||
+                    const hasValue3 = (_value0_2 && _value0_2.trim() !== '') || (_value1_2 && _value1_2.trim() !== '') ||
+                        (_value2_2 && _value2_2.trim() !== '') || (_value3_2 && _value3_2.trim() !== '') ||
+                        (_value4_2 && _value4_2.trim() !== '') || (_value5_2 && _value5_2.trim() !== '') ||
+                        (_value6_2 && _value6_2.trim() !== '') || (_value7_2 && _value7_2.trim() !== '') ||
+                        (_value8_2 && _value8_2.trim() !== '');
+
+                    const hasValue4 = (_value0_2 && _value0_2.trim() !== '') || (_value1_2 && _value1_2.trim() !== '') ||
+                        (_value2_2 && _value2_2.trim() !== '') || (_value3_2 && _value3_2.trim() !== '') ||
+                        (_value4_2 && _value4_2.trim() !== '') || (_value5_2 && _value5_2.trim() !== '') ||
+                        (_value6_2 && _value6_2.trim() !== '') || (_value7_2 && _value7_2.trim() !== '') ||
+                        (_value8_2 && _value8_2.trim() !== '');
+
+                    const hasValue5 = (_value0_2 && _value0_2.trim() !== '') || (_value1_2 && _value1_2.trim() !== '') ||
+                        (_value2_2 && _value2_2.trim() !== '') || (_value3_2 && _value3_2.trim() !== '') ||
+                        (_value4_2 && _value4_2.trim() !== '') || (_value5_2 && _value5_2.trim() !== '') ||
+                        (_value6_2 && _value6_2.trim() !== '') || (_value7_2 && _value7_2.trim() !== '') ||
+                        (_value8_2 && _value8_2.trim() !== '');
+
+                    const hasValue6 = (_value0_2 && _value0_2.trim() !== '') || (_value1_2 && _value1_2.trim() !== '') ||
+                        (_value2_2 && _value2_2.trim() !== '') || (_value3_2 && _value3_2.trim() !== '') ||
+                        (_value4_2 && _value4_2.trim() !== '') || (_value5_2 && _value5_2.trim() !== '') ||
+                        (_value6_2 && _value6_2.trim() !== '') || (_value7_2 && _value7_2.trim() !== '') ||
+                        (_value8_2 && _value8_2.trim() !== '');
+
+                    if ((data.attributes[0].value == _value0_1 ||
                         data.attributes[0].value == _value1_1 ||
                         data.attributes[0].value == _value2_1 ||
                         data.attributes[0].value == _value3_1 ||
                         data.attributes[0].value == _value4_1 ||
-                        data.attributes[0].value == _value5_1) || (
+                        data.attributes[0].value == _value5_1) && (
+                            (!hasValue2 || (
+                                data.attributes[1].value == _value0_2 ||
+                                data.attributes[1].value == _value1_2 ||
+                                data.attributes[1].value == _value2_2 ||
+                                data.attributes[1].value == _value3_2 ||
+                                data.attributes[1].value == _value4_2 ||
+                                data.attributes[1].value == _value5_2 ||
+                                data.attributes[1].value == _value6_2 ||
+                                data.attributes[1].value == _value7_2 ||
+                                data.attributes[1].value == _value8_2))
+                        ) && (
+                            (data.attributes[1].value == _value0_3 ||
+                                data.attributes[1].value == _value1_3 ||
+                                data.attributes[1].value == _value2_3 ||
+                                data.attributes[1].value == _value3_3 ||
+                                data.attributes[1].value == _value4_3 ||
+                                data.attributes[1].value == _value5_3)
+                        ) && (
+                            (data.attributes[1].value == _value0_4 ||
+                                data.attributes[1].value == _value1_4 ||
+                                data.attributes[1].value == _value2_4 ||
+                                data.attributes[1].value == _value3_4 ||
+                                data.attributes[1].value == _value4_4)
+                        ) && (
+                            (data.attributes[1].value == _value0_5 ||
+                                data.attributes[1].value == _value1_5 ||
+                                data.attributes[1].value == _value2_5 ||
+                                data.attributes[1].value == _value3_5 ||
+                                data.attributes[1].value == _value4_5 ||
+                                data.attributes[1].value == _value5_5)
+                        ) && (
+                            (data.attributes[1].value == _value0_6 ||
+                                data.attributes[1].value == _value1_6 ||
+                                data.attributes[1].value == _value2_6 ||
+                                data.attributes[1].value == _value3_6 ||
+                                data.attributes[1].value == _value4_6 ||
+                                data.attributes[1].value == _value5_6)
+                        )
 
-                            data.attributes[1].value == _value0_2 ||
-                            data.attributes[1].value == _value1_2 ||
-                            data.attributes[1].value == _value2_2 ||
-                            data.attributes[1].value == _value3_2 ||
-                            data.attributes[1].value == _value4_2 ||
-                            data.attributes[1].value == _value5_2 ||
-                            data.attributes[1].value == _value6_2 ||
-                            data.attributes[1].value == _value7_2 ||
-                            data.attributes[1].value == _value8_2
-                        ) || (data.attributes[1].value == _value0_3 ||
-                            data.attributes[1].value == _value1_3 ||
-                            data.attributes[1].value == _value2_3 ||
-                            data.attributes[1].value == _value3_3 ||
-                            data.attributes[1].value == _value4_3 ||
-                            data.attributes[1].value == _value5_3
-                        ) || (data.attributes[1].value == _value0_4 ||
-                            data.attributes[1].value == _value1_4 ||
-                            data.attributes[1].value == _value2_4 ||
-                            data.attributes[1].value == _value3_4 ||
-                            data.attributes[1].value == _value4_4
-                        ) ||
-                        (data.attributes[1].value == _value0_5 ||
-                            data.attributes[1].value == _value1_5 ||
-                            data.attributes[1].value == _value2_5 ||
-                            data.attributes[1].value == _value3_5 ||
-                            data.attributes[1].value == _value4_5 ||
-                            data.attributes[1].value == _value5_5
-                        ) ||
-                        (data.attributes[1].value == _value0_6 ||
-                            data.attributes[1].value == _value1_6 ||
-                            data.attributes[1].value == _value2_6 ||
-                            data.attributes[1].value == _value3_6 ||
-                            data.attributes[1].value == _value4_6 ||
-                            data.attributes[1].value == _value5_6
-                        ))
+                        && candyMachine.items[x].minted) {
 
-                       /* && candyMachine.items[x].minted*/) {
 
-                        console.log("candyMachine.items[x].minted" + candyMachine.items[x].minted);
                         itemDataArray.push({
                             name: candyMachine.items[x].name,
                             uri: imageURL
                         });
 
-                        console.log("Y" + y);
-
                     } else {
                         y++;
-                        console.log("Y2" + y);
-
                     }
 
-
+                    
                     loaded++;
                     var percentage = ((loaded * 100) / y);
                     console.log("percentage : " + percentage);
